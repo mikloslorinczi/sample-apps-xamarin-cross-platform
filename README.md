@@ -1,1 +1,1 @@
-# sample-apps-xamarin-cross-platform
+# xamarin-sample
