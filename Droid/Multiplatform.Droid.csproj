@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Multiplatform.Droid</RootNamespace>
     <AssemblyName>Multiplatform.Droid</AssemblyName>
-    <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -36,13 +36,8 @@
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
-    <BundleAssemblies></BundleAssemblies>
     <AndroidStoreUncompressedFileExtensions></AndroidStoreUncompressedFileExtensions>
     <MandroidI18n></MandroidI18n>
-    <AotAssemblies></AotAssemblies>
-    <EnableLLVM></EnableLLVM>
-    <EnableProguard>false</EnableProguard>
-    <AndroidEnableMultiDex></AndroidEnableMultiDex>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

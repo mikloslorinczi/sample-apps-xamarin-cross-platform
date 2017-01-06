@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleName</key>
-	<string>Multiplaform Mac</string>
+	<string>Multiplaform</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.godrei.multiplaform-mac</string>
+	<string>com.bitrise.multiplaform</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>

@@ -1,5 +1,4 @@
 ﻿using System;
-
 using AppKit;
 using Foundation;
 
@@ -7,6 +6,8 @@ namespace Multiplatform.Mac
 {
 	public partial class ViewController : NSViewController
 	{
+		int count = 1;
+
 		public ViewController(IntPtr handle) : base(handle)
 		{
 		}
@@ -14,8 +15,12 @@ namespace Multiplatform.Mac
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
+		}
 
-			// Do any additional setup after loading the view.
+		partial void Action(Foundation.NSObject sender)
+		{
+			var title = string.Format("{0} clicks!", count++);
+			Button.Title = title;
 		}
 
 		public override NSObject RepresentedObject
@@ -27,7 +32,6 @@ namespace Multiplatform.Mac
 			set
 			{
 				base.RepresentedObject = value;
-				// Update the view, if already loaded.
 			}
 		}
 	}
