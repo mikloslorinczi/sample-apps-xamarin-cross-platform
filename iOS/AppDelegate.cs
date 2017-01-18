@@ -14,6 +14,11 @@ namespace Multiplatform.iOS
 
 		public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
 		{
+			// Code to start the Xamarin Test Cloud Agent
+#if DEBUG
+			Xamarin.Calabash.Start();
+#endif
+
 			return true;
 		}
 
