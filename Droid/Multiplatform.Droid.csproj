@@ -38,6 +38,7 @@
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <AndroidStoreUncompressedFileExtensions></AndroidStoreUncompressedFileExtensions>
     <MandroidI18n></MandroidI18n>
+    <AndroidSupportedAbis>armeabi-v7a</AndroidSupportedAbis>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
