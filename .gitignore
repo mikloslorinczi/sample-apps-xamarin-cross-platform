@@ -188,3 +188,9 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 
+# Bundle configs
+*/.bundle/config
+
+# Calabash test servers
+*/test_servers/*
+
