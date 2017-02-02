@@ -6,6 +6,8 @@ app:
   - BITRISE_PROJECT_PATH: Multiplatform.sln
   - BITRISE_XAMARIN_CONFIGURATION: calabash
   - BITRISE_XAMARIN_PLATFORM: Any CPU
+
+  - BITRISE_EMULATOR_NAME: Emulator
   
 workflows:
   calabash:
@@ -16,12 +18,14 @@ workflows:
     - xamarin-archive:
         inputs:
         - project_type_whitelist: android,ios
-        - xamarin_solution: $BITRISE_PROJECT_PATH
-        - xamarin_configuration: $BITRISE_XAMARIN_CONFIGURATION
-        - xamarin_platform: $BITRISE_XAMARIN_PLATFORM
     - calabash-ios-uitest:
         inputs:
         - work_dir: iOS
+    - create-android-emulator:
+        run_if: .IsCI
+        inputs:
+        - name: $BITRISE_EMULATOR_NAME
+    - start-android-emulator:
     - calabash-android-uitest:
         inputs:
         - work_dir: Droid
