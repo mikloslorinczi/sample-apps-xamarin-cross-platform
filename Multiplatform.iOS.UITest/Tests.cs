@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using Xamarin.UITest;
 using Xamarin.UITest.iOS;
+using Xamarin.UITest.Configuration;
 
 namespace Multiplatform.iOS.UITest
 {
@@ -13,22 +14,21 @@ namespace Multiplatform.iOS.UITest
 		[SetUp]
 		public void BeforeEachTest()
 		{
-			string appBundlePath = Environment.GetEnvironmentVariable("APP_BUNDLE_PATH");
+			iOSAppConfigurator configurator = ConfigureApp.iOS;
 
+			string appBundlePath = Environment.GetEnvironmentVariable("APP_BUNDLE_PATH");
 			if (!string.IsNullOrEmpty(appBundlePath))
 			{
-				// In case of Bitrise step: steps-xamarin-ios-uitest.
-				app = ConfigureApp
-					.iOS
-					.AppBundle(appBundlePath)
-					.StartApp();
+				configurator.AppBundle(appBundlePath);
 			}
-			else {
-				// In case of Bitrise step: steps-xamarin-testcloud-for-ios or running in the IDE.
-				app = ConfigureApp
-					.iOS
-					.StartApp();
+
+			string simulatorUDID = Environment.GetEnvironmentVariable("IOS_SIMULATOR_UDID");
+			if (!string.IsNullOrEmpty(simulatorUDID))
+			{
+				configurator.DeviceIdentifier(simulatorUDID);
 			}
+
+			app = configurator.StartApp();
 		}
 
 		[Test]
