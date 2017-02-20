@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{402590CD-F855-4628-946C-4580B9896020}</ProjectGuid>
+    <ProjectGuid>{D0586CDC-8BA7-42C8-840A-6E8317ECB833}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Multiplatform.iOS.UITest</RootNamespace>
-    <AssemblyName>Multiplatform.iOS.UITest</AssemblyName>
+    <RootNamespace>Multiplatform.UItest</RootNamespace>
+    <AssemblyName>Multiplatform.UItest</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -30,16 +30,23 @@
       <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.UITest">
-      <HintPath>..\packages\Xamarin.UITest.2.0.5\lib\Xamarin.UITest.dll</HintPath>
+      <HintPath>..\packages\Xamarin.UITest.2.0.6\lib\Xamarin.UITest.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Tests.cs" />
+    <Compile Include="AppInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Droid\Multiplatform.Droid.csproj">
+      <Project>{55EA6039-2E17-4885-B39C-1D4827FED0E2}</Project>
+      <Name>Multiplatform.Droid</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+      <Private>False</Private>
+    </ProjectReference>
     <ProjectReference Include="..\iOS\Multiplatform.iOS.csproj">
       <Project>{B28A3533-53E2-412D-A6B8-6FB18FD13C1E}</Project>
       <Name>Multiplatform.iOS</Name>
