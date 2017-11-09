@@ -21,9 +21,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <EnableCodeSigning>true</EnableCodeSigning>
-    <CodeSigningKey>Developer ID Application</CodeSigningKey>
+    <CodeSigningKey>Developer ID Application: Godrei Krisztian (339CX9E66J)</CodeSigningKey>
     <CreatePackage>false</CreatePackage>
-    <EnablePackageSigning>false</EnablePackageSigning>
+    <EnablePackageSigning>true</EnablePackageSigning>
     <IncludeMonoRuntime>false</IncludeMonoRuntime>
     <UseSGen>true</UseSGen>
     <UseRefCounting>true</UseRefCounting>
@@ -32,8 +32,8 @@
     <TlsProvider></TlsProvider>
     <LinkMode></LinkMode>
     <XamMacArch></XamMacArch>
-    <PackageSigningKey>3rd Party Mac Developer Installer</PackageSigningKey>
-    <CodeSignProvision>Automatic</CodeSignProvision>
+    <PackageSigningKey>3rd Party Mac Developer Installer: Godrei Krisztian (339CX9E66J)</PackageSigningKey>
+    <CodeSignProvision>Bitrise Multiplaform Mac Developer ID</CodeSignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -43,9 +43,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <EnableCodeSigning>true</EnableCodeSigning>
-    <CodeSigningKey>Developer ID Application</CodeSigningKey>
+    <CodeSigningKey>Developer ID Application: Godrei Krisztian (339CX9E66J)</CodeSigningKey>
     <CreatePackage>true</CreatePackage>
-    <EnablePackageSigning>false</EnablePackageSigning>
+    <EnablePackageSigning>true</EnablePackageSigning>
     <IncludeMonoRuntime>true</IncludeMonoRuntime>
     <UseSGen>true</UseSGen>
     <UseRefCounting>true</UseRefCounting>
@@ -53,8 +53,8 @@
     <HttpClientHandler></HttpClientHandler>
     <TlsProvider></TlsProvider>
     <XamMacArch></XamMacArch>
-    <CodeSignProvision>Automatic</CodeSignProvision>
-    <PackageSigningKey>3rd Party Mac Developer Installer</PackageSigningKey>
+    <CodeSignProvision>Bitrise Multiplaform Mac Developer ID</CodeSignProvision>
+    <PackageSigningKey>3rd Party Mac Developer Installer: Godrei Krisztian (339CX9E66J)</PackageSigningKey>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
