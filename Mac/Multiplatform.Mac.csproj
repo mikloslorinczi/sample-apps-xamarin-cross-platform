@@ -21,7 +21,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <EnableCodeSigning>true</EnableCodeSigning>
-    <CodeSigningKey>Developer ID Application: Godrei Krisztian (339CX9E66J)</CodeSigningKey>
+    <CodeSigningKey>3rd Party Mac Developer Application: Godrei Krisztian (339CX9E66J)</CodeSigningKey>
     <CreatePackage>false</CreatePackage>
     <EnablePackageSigning>true</EnablePackageSigning>
     <IncludeMonoRuntime>false</IncludeMonoRuntime>
@@ -33,7 +33,7 @@
     <LinkMode></LinkMode>
     <XamMacArch></XamMacArch>
     <PackageSigningKey>3rd Party Mac Developer Installer: Godrei Krisztian (339CX9E66J)</PackageSigningKey>
-    <CodeSignProvision>Bitrise Multiplaform Mac Developer ID</CodeSignProvision>
+    <CodeSignProvision>Bitrise Multiplaform Mac App Store</CodeSignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
