@@ -1,5 +1,10 @@
 ﻿using Foundation;
 using UIKit;
+using System;
+
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace Multiplatform.iOS
 {
@@ -18,6 +23,8 @@ namespace Multiplatform.iOS
 #if DEBUG
 			Xamarin.Calabash.Start();
 #endif
+            string appCenterID = Environment.GetEnvironmentVariable("BITRISE_APP_CENTER_ID");
+            AppCenter.Start(appCenterID, typeof(Analytics), typeof(Crashes));
 
 			return true;
 		}
