@@ -1,11 +1,8 @@
 ﻿<Properties StartupConfiguration="{B28A3533-53E2-412D-A6B8-6FB18FD13C1E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/AppDelegate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/MainActivity.cs">
     <Files>
-      <File FileName="../../../../../Library/Frameworks/Xamarin.iOS.framework/Versions/11.9.1.24/lib/msbuild/iOS/Xamarin.iOS.Common.targets" Line="625" Column="33" />
-      <File FileName="iOS/AppDelegate.cs" Line="25" Column="13" />
-      <File FileName="Multiplatform.UItest/packages.config" Line="5" Column="12" />
-      <File FileName="Multiplatform.UItest/Tests.cs" Line="1" Column="1" />
-      <File FileName="Multiplatform.UItest/AppInitializer.cs" Line="21" Column="5" />
+      <File FileName="iOS/AppDelegate.cs" Line="4" Column="1" />
+      <File FileName="Droid/MainActivity.cs" Line="18" Column="62" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
