@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiplatform.iOS", "Multiplatform.iOS.csproj", "{B28A3533-53E2-412D-A6B8-6FB18FD13C1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B28A3533-53E2-412D-A6B8-6FB18FD13C1E}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{B28A3533-53E2-412D-A6B8-6FB18FD13C1E}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{B28A3533-53E2-412D-A6B8-6FB18FD13C1E}.Release|iPhone.ActiveCfg = Release|iPhone
+		{B28A3533-53E2-412D-A6B8-6FB18FD13C1E}.Release|iPhone.Build.0 = Release|iPhone
+		{B28A3533-53E2-412D-A6B8-6FB18FD13C1E}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{B28A3533-53E2-412D-A6B8-6FB18FD13C1E}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{B28A3533-53E2-412D-A6B8-6FB18FD13C1E}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{B28A3533-53E2-412D-A6B8-6FB18FD13C1E}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal

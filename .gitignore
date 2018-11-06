@@ -38,6 +38,9 @@ TestResult.xml
 [Rr]eleasePS/
 dlldata.c
 
+# Visual Studio (>=2015) project-specific, machine local files
+.vs/
+
 *_i.c
 *_p.c
 *_i.h
